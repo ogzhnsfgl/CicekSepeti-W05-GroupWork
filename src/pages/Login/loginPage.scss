@@ -1,0 +1,54 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+
+.will-del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .form-container {
+    display: grid;
+    grid-template-columns: auto;
+    // justify-content:center;
+    position: relative;
+    background-color: $second-color;
+    border-radius: 2em;
+    height: 75%;
+    padding: 2rem;
+    width: 50%;
+    align-content: center;
+    .login-form {
+      color: $second-color;
+      text-align: left;
+      label, input, button {
+        margin: 1em;
+        display: block;
+        width: 100%;
+        padding: 3em;
+        border: none;
+        border-radius: 2em;
+        outline: none;
+        box-sizing: border-box;
+      }
+      label {
+        color: $dark-text-color;
+        background-color: $light-text-color;
+      }
+      input {
+        color: $dark-text-color;
+        background: $light-text-color;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 10px;
+      }
+      button {
+        color: $dark-text-color;
+        background: $light-text-color;
+        margin-top: 5em;
+        height: 3em;
+      }
+    }
+  }
+}
