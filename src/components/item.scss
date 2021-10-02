@@ -1,10 +1,9 @@
 @import '../scss/_variables.scss';
 @import '../scss/main.scss';
 
-
 .card-item {
   margin: 1rem;
-  display:flex;
+  display: flex;
 
   align-items: center;
 
@@ -12,15 +11,16 @@
   border-radius: 10px;
   padding: 2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  img{
-    width: 50rem;
+  img {
+    width: 30rem;
     height: 30rem;
     border-radius: 1rem;
     margin-top: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   h3 {
-    color: #668ba4; 
+    color: #668ba4;
     font-size: 2rem;
     margin-left: 1rem;
   }
