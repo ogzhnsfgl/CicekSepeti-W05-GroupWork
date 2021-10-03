@@ -12,7 +12,7 @@ function Item({ post }) {
   return (
     <div className="card-item" onClick={handleClick}>
       <div className="card-item-img">
-        <img src={`https://picsum.photos/id/${id}/400/600`} />
+        <img src={`https://picsum.photos/id/${id}/400/600`} alt={"icon"+id} />
       </div>
       <div className="card-item-text">
         {" "}
