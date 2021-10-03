@@ -29,7 +29,7 @@ const ItemDetailPage = (props) => {
 
   return (
     <div>
-      <img src={`https://picsum.photos/id/${id}/400/600`} />
+      <img src={`https://picsum.photos/id/${id}/400/600`} alt={"icon"+id}/>
       <h1> {fetchedData.title} </h1>
       <h1> {fetchedData.body} </h1>
     </div>
