@@ -1,34 +1,34 @@
-import { getData } from "../../services/api";
-import { useState, useEffect } from "react";
-import Item from "../../components/Item";
-import "./HomePage.scss";
+import { getData } from '../../services/api';
+import { useState, useEffect } from 'react';
+import Item from '../../components/Item';
+import './HomePage.scss';
+
 function HomePage() {
   const [allPosts, setAllPosts] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
-      const { data, error } = await getData();
+      const { data } = await getData();
       setAllPosts(data);
 
-      // setIsLoading(false);
+      setIsLoading(false);
     })();
   }, []);
 
-  console.log("allPosts", allPosts);
+  console.log('allPosts', allPosts);
 
-  /*if (isLoading) {
+  if (isLoading) {
     return <h1>Loading</h1>;
-  }*/
+  }
 
   return (
     <div className="container">
-        <div className="cards">
-          {allPosts.map((post) => (
-            <Item key={post.id} post={post} />
-          ))}
-          hello
-        </div>
+      <div className="cards">
+        {allPosts.map((post) => (
+          <Item key={post.id} post={post} />
+        ))}
+      </div>
     </div>
   );
 }

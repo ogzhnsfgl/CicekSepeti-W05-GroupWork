@@ -1,43 +1,42 @@
-@import "../../scss/_variables.scss";
-@import "../../scss/main.scss";
-@import "../../scss/mixin";
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+@import '../../scss/mixin';
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 .will-del {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background: #ecf0f3;
+  background: hsl(206, 23%, 94%);
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   .form-container {
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 40rem;
+    height: 55rem;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
     background: #ecf0f3;
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.596);
 
     .login-logo {
       height: 100px;
       width: 100px;
-      background: url("https://img.icons8.com/color/100/2-cute.png");
+      background: url('https://img.icons8.com/plumpy/100/2.png');
       margin: auto;
-      border-radius: 50%;
       box-sizing: border-box;
-      box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+      // box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
     }
 
     .login-title {
       margin-top: 10px;
       font-weight: 900;
       font-size: 2.5rem;
-      color: purple;
+      color: #4b4a5a;
       letter-spacing: 1px;
     }
 
@@ -66,7 +65,7 @@
     }
 
     input {
-      color: purple;
+      color: #4b4a5a;
       background-color: #ecf0f3;
       padding: 10px;
       padding-left: 20px;
@@ -83,7 +82,8 @@
       margin-top: 20px;
       color: #fff;
       font-size: 1.5rem;
-      background-color: purple;
+      background-color: #4b4a5a;
+
       height: 40px;
       border-radius: 20px;
       cursor: pointer;

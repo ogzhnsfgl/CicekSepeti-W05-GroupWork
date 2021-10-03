@@ -3,21 +3,36 @@
 @import '_variables.scss';
 @import '_mixin.scss';
 
-
-:root{
+:root {
   font-size: 10px;
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
-.container{
-max-width: 120rem;
-margin: 0 auto;
-padding:1rem;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700;
+  margin: 50px auto;
 }
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-item {
+    padding: 0px 30px;
+    width: 380px;
 
+    .card-item-text {
+      font-size: 10px;
+    }
+  }
+}

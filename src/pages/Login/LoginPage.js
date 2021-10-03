@@ -43,8 +43,9 @@ function LoginPage() {
   const handlePasswordInput = (e) => {
     setPasswordInput(e.target.value);
   };
-  const loginProcess = (user, pass) => {
-    handleClick(user, pass);
+  const loginProcess = (e) => {
+    e.preventDefault();
+    handleClick(usernameInput, passwordInput);
   };
 
   return (
@@ -70,7 +71,7 @@ function LoginPage() {
               name="password"
               placeholder="admin"
             />
-            <button onClick={() => loginProcess(usernameInput, passwordInput)}>
+            <button onClick={(e) => loginProcess(e)}>
               Log In
             </button>
           </div>

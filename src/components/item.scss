@@ -1,31 +1,48 @@
 @import '../scss/_variables.scss';
 @import '../scss/main.scss';
 
+
 .card-item {
-  margin: 1rem;
-  display: flex;
 
+  display:flex;
   align-items: center;
+  justify-content: center;
+  border: 1px solid $bg-color;
+  border-radius: 5px;
+  margin: 20px 20px;
+    .card-item-text {
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 20px;
 
-  border: 2px solid $bg-color;
-  border-radius: 10px;
-  padding: 2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  img {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  h3 {
-    color: #668ba4;
-    font-size: 2rem;
-    margin-left: 1rem;
-  }
-  p {
-    font-size: 1.7rem;
-    margin-left: 1rem;
-  }
+          h2 {
+              color: rgba(41, 41, 41, 1);
+              text-transform:uppercase ;
+              line-height: 28px;
+              text-overflow: ellipsis;
+              margin-bottom: 5px;
+          }
+          p {
+              color: #757575;
+              font-weight: 200;
+              letter-spacing: 1px;
+          }
+        }
+    
+    .card-item-img {
+
+      flex: 0 0 200px;
+
+      img{
+       
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0 5px 5px 0;
+      }
+      
+    }
+
+ 
 }

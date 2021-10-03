@@ -1,0 +1,46 @@
+
+.item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+    margin: 50px auto;
+    color:  #111111;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    .return-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        border-radius: 5px 0 0 0;
+    }
+    .return-text {
+        position: absolute;
+        width: 65px;
+        left: 65px;
+        top: 25px;
+        font-weight: bold;
+    }
+    .content-wrapper {
+        padding: 10px 20px;
+        h1 {
+            color: rgba(41, 41, 41, 1);
+            text-transform:uppercase ;
+            line-height: 28px;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #757575;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+    }
+    
+    img {
+        border-radius: 0 5px 5px 0;
+    }
+  
+}
